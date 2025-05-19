@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f242d;
+  color: #fff;
+  padding: 20px;
+}
+
+#skills {
+  
+  text-align: center;
+  background-color: #1f242d;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    padding: 10px 30px;
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 16px;
+    font-weight: 600;
+  font-size: 2.5rem;
+  color: #1f242d; /* Green shade for title */
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-btn {
+
+  background-color: #1a1a1a;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.skill-btn:hover {
+  background-color: #00ff00;
+  color: #1a1a1a;
+}
+
+.skill-btn:active {
+  transform: scale(0.98);
+}
+
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Section</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <button class="skill-btn" onclick= "window.location.href='index.html'">HTML</button>
+      <button class="skill-btn" onclick="alert('C Skill Clicked!')">C</button>
+      <button class="skill-btn" onclick="alert('Python Skill Clicked!')">Python</button>
+    </div>
+  </section>
+</body>
+</html>
